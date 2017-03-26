@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        window.onresize = function(event) {
+            var height = window.innerHeight ||
+                document.documentElement.clientHeight ||
+                document.body.clientHeight;
+            document.getElementById("web").style.minHeight = height - 23;
+        };
+    </script>
+    <title>Paperwork</title>
+</head>
+
+<body style="margin: 0; padding: 0;">
+    <div style="width:100%; height: 23px; -webkit-app-region: drag; background-color:rgb(245,245,245);">
+    </div>
+    <div style="width:100%; height:100%; position: fixed;">
+        <webview id="web" src="http://lserver.alite.am:8080/paperwork/frontend/public" autosize="on" style="min-width:1200px; min-height:777px;"></webview>
+    </div>
+</body>
+
+</html>

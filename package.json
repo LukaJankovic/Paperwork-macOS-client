@@ -1,0 +1,13 @@
+{
+  "name": "Paperwork",
+  "version": "1.0.0",
+  "main": "main.js",
+  "devDependencies": {
+    "electron": "^1.6.2",
+    "electron-packager": "^8.1.0"
+  },
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=icons/paperwork-logo.icns --prune=true --out=release-builds"
+  }
+}
